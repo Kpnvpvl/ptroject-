@@ -1,0 +1,119 @@
+html,body {
+    font-family: 'Arial';
+    margin: 0 ;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+a:hover{
+    color: #CC5614;
+    text-decoration: underline;
+}
+.clear {clear: both;}
+h1 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#reg_form{
+    width: 350px;
+    margin: 20px auto 0 auto;
+    padding:  10px;
+    background: #fff;
+    box-shadow:  5px 5px 10px #aaa;
+}
+ul.reg_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.reg_list li {
+    margin: 10px 0 10px 0;
+}
+.reg_title {
+    display: inline-block;
+    min-width: 100px;
+}
+input.reg_input {
+    width: 230px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 16px;
+}
+input.reg_input:focus{
+    border-bottom: 1px solid #ffdb4d;
+}
+.reg_select{
+    width: 230px;
+    font-size: 14px;
+    background: #fff9b5;
+}
+.reg_agree{
+    font-size: 12px;
+}
+textarea{
+    font-size: 16px;
+    color: #096407;
+    max-width: 330px;
+    max-height: 100px;
+}
+#reg_control {
+    overflow: hidden;
+    margin-top: 40px;
+}
+input.reg_button {
+    background: #ffdb4d;
+    font-size: 16px;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #ffcf11;
+    border-radius: 3px;
+}
+
+ul.mainmenu {
+    list-style: none;
+    background: #3f4137;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    color: #fdc073;
+    font-size: 20px;
+    overflow: hidden;
+}
+ul.mainmenu li{
+    float: left;
+    margin: 18px 40px 0 50px;
+}
+ul.mainmenu li.last{float: right;}
+ul.mainmenu li a {
+    color: #fdc073;
+    text-decoration: none;
+}
+ul.mainmenu li a:hover {
+    color: #fda83d;
+}
+div.content {
+    margin: 10px;
+}
+.form-contact label {
+    display: inline-block;
+    min-width: 80px;
+}
+.form-contact p{ margin: 10px 0 10px 0;}
+.form-contact input [type=submit], textarea {
+    font-size: 16px;
+}
+.flash {padding: 10px;}
+.flash.success {
+    border: 1px solid #21db56;
+    background: #aeffc5;
+}
+.flash.error {
+    border: 1px solid #ff4343;
+    background: #ff9c9c;
+}

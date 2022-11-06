@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}  ">{{msg}}</div>
+{% endfor %}
+<form action="/register" method="post" class="form-contact">
+    <p><label>Name:</label><<input name="username" placeholder="" required />
+    <p><label>Email:</label><<input name="email" placeholder="" required />
+    <p><label>Password:</label><input type="password" name="password" placeholder="" required />
+    <p><label>Verify Password:</label><input type="password" name="password2"  placeholder="" required />
+    <button class="btn-tologin" type="submit" style="margin-top:100px;">Sign in</button>
+        <a href="{{url_for('login')}}">Login</a>
+</form>
+{% endblock %}
